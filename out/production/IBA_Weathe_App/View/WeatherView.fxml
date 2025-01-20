@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WeatherViewController">
+
+    <children>
+
+        <TextField fx:id="txtCity" layoutX="244.0" layoutY="50.0" promptText="Enter your city Here" />
+        <Button fx:id="btnSearch" layoutX="436.0" layoutY="50.0" text=" Search Name">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+
+        <Label fx:id="lblCityName" layoutX="50" layoutY="120" />
+        <Label fx:id="lblTemp" layoutX="50" layoutY="160" />
+        <Label fx:id="lblHumidity" layoutX="50" layoutY="240" />
+        <Label fx:id="lblDescription" layoutX="300" layoutY="240" />
+
+        <ImageView fx:id="weatherIcon" layoutX="350" layoutY="120" />
+      <Pane prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: 0,102,102;" />
+
+
+    </children>
+
+</AnchorPane>
